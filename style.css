@@ -825,9 +825,6 @@ body {
   filter: drop-shadow(var(--glow-cyan));
 }
 
-.glitch-effect {
-  animation: glitch 2s infinite;
-}
 
 .loading-text {
   font-family: 'Orbitron', monospace;
