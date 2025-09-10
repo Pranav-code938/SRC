@@ -1632,7 +1632,7 @@ body {
   flex-direction: row !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 18px !important;
+  gap: 11px !important;
   width: 95vw !important;
   max-width: 400px !important;
   margin: 0 auto !important;
@@ -1647,8 +1647,8 @@ body {
 }
 
 .logo-x {
-  width: 60px !important;                    /* Image width */
-  height: 60px !important;                   /* Image height */
+  width: 80px !important;                    /* Image width */
+  height: 80px !important;                   /* Image height */
   object-fit: contain !important;            /* Maintain aspect ratio */
   margin: 0 12px !important;                 /* Spacing around image */
   filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3)) !important; /* Shadow effect */
@@ -1689,7 +1689,7 @@ body {
   }
   
   .logo-x {
-    font-size: 44px !important;
+    font-size: 65px !important;
     font-weight: 600 !important;  /* Slightly thicker for desktop */
     margin: 0 8px !important;
   }
@@ -1739,26 +1739,35 @@ body {
 }
 
 .btn-location {
-  display: inline-block;
-  background: linear-gradient(45deg, #00ffff, #00d4ff);
-  color: #000000;
-  font-family: 'Orbitron', monospace;
-  font-weight: 700;
-  font-size: 11px;
-  padding: 15px 40px;
-  border-radius: 8px;
-  text-decoration: none;
-  text-transform: uppercase;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-  transition: all 0.3s ease;
-  letter-spacing: 2px;
+  white-space: nowrap !important;      /* Prevent line breaks */
+  padding: 10px 25px !important;       /* Smaller padding for compact look */
+  font-size: 14px !important;          /* Slightly smaller text */
+  letter-spacing: 1px !important;      /* Reduced letter spacing */
+  border-radius: 8px !important;
+  max-width: 90vw !important;          /* Prevent overflow on small screens */
+  text-align: center !important;
 }
 
-.btn-location:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
-  background: linear-gradient(45deg, #00d4ff, #00ffff);
+/* For very small screens, make text even smaller */
+@media (max-width: 400px) {
+  .btn-location {
+    font-size: 12px !important;
+    padding: 8px 20px !important;
+  }
+  @media (max-width: 500px) {
+  .synergia-x-src {
+    gap: 6px !important;        /* Even closer on mobile */
+    max-width: 95vw !important;
+  }
+  
+  .logo-x {
+    width: 50px !important;     /* Adjust X size for mobile */
+    height: 50px !important;
+  }
 }
+
+}
+
 
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
