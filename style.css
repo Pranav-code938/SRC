@@ -2029,6 +2029,40 @@ body {
   margin-left: auto;       /* push it to the right edge */
   margin-right: -3px;     /* move 10 px farther right — increase or decrease as needed */
 }
+.presents-text {
+  opacity: 0.6 !important;         /* 60% opacity - adjust as needed */
+  transition: opacity 0.3s ease;   /* Smooth transition */
+}
+
+/* Optional: Make it fully visible on hover */
+.presents-text:hover {
+  opacity: 1 !important;           /* Full opacity on hover */
+}
+.subtitle {
+  font-size: 32px !important;         /* Much bigger font size */
+  font-weight: 900 !important;        /* Extra bold (heaviest weight) */
+  color: var(--cyber-cyan) !important; /* Cyan color to match theme */
+  text-shadow: 0 0 25px rgba(0, 255, 255, 0.6) !important; /* Enhanced neon glow */
+  margin-bottom: 20px !important;     /* Add spacing below */
+  line-height: 1.1 !important;        /* Tighter line height */
+  font-family: 'Orbitron', monospace !important; /* Ensure bold font family */
+  white-space: nowrap !important;     /* Keep on one line */
+}
+
+/* Mobile responsive - smaller but still bold and bigger */
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 24px !important;       /* Smaller on mobile but still increased */
+    white-space: normal !important;   /* Allow wrapping on very small screens */
+  }
+}
+
+/* For very small screens */
+@media (max-width: 400px) {
+  .subtitle {
+    font-size: 20px !important;
+  }
+}
 
 
 
