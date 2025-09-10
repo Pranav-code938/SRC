@@ -1599,8 +1599,8 @@ body {
 }
 
 .sahyadri-logo-topright {
-  width: 35px !important;
-  max-width: 15vw !important;
+  width: 45px !important;
+  max-width: 50vw !important;
   height: auto !important;
   display: block !important;
 }
@@ -1621,7 +1621,7 @@ body {
   justify-content: center !important;
   gap: 12px !important;
   width: 95vw !important;
-  max-width: 300px !important;
+  max-width: 370px !important;
   margin: 0 auto !important;
 }
 
@@ -1634,7 +1634,7 @@ body {
 }
 
 .logo-x {
-  font-size: 34px !important;
+  font-size: 45px !important;
   font-weight: 800 !important;
   color: #ffffff !important;
   margin: 0 6px !important;
