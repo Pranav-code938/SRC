@@ -1637,12 +1637,26 @@ body {
 }
 
 .logo-x {
-  font-size: 65px !important;     /* Bigger to match logos - increased from 45px */
-  font-weight: 400 !important;    /* Thinner X - reduced from 800 */
-  color: #ffffff !important;
-  margin: 0 8px !important;       /* More spacing */
-  line-height: 1 !important;
+  width: 60px !important;                    /* Image width */
+  height: 60px !important;                   /* Image height */
+  object-fit: contain !important;            /* Maintain aspect ratio */
+  margin: 0 12px !important;                 /* Spacing around image */
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3)) !important; /* Shadow effect */
+  transition: transform 0.3s ease !important; /* Hover animation */
 }
+
+.logo-x:hover {
+  transform: scale(1.1) !important;          /* Slight zoom on hover */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .logo-x {
+    width: 45px !important;
+    height: 45px !important;
+  }
+}
+
 
 /* Desktop adjustments */
 @media (min-width: 768px) {
