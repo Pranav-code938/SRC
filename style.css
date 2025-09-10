@@ -2024,6 +2024,11 @@ body {
     text-align: center !important;
   }
 }
+.sahyadri-logo-topright {
+  display: block;          /* needed for margins to work */
+  margin-left: auto;       /* push it to the right edge */
+  margin-right: -10px;     /* move 10 px farther right — increase or decrease as needed */
+}
 
 
 
