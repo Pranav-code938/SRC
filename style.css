@@ -1135,12 +1135,22 @@ body {
 
 .motto {
   font-family: 'Orbitron', monospace;
-  font-size: 16px;
+  font-size: 12px !important;           /* Even smaller */
   color: var(--neon-pink);
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 1px !important;       /* Tighter spacing */
   text-shadow: var(--glow-pink);
+  line-height: 1 !important;
 }
+
+/* Extra small for very narrow screens */
+@media (max-width: 480px) {
+  .motto {
+    font-size: 11px !important;
+    letter-spacing: 0.5px !important;
+  }
+}
+
 
 /* Section Titles */
 .section-title {
