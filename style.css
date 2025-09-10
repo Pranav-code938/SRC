@@ -2100,6 +2100,23 @@ body {
   cursor: pointer;
   box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
 }
+.presents-text {
+  font-size: 12px !important;         /* Smaller font size */
+  font-family: 'Orbitron', monospace !important;
+  font-weight: 600 !important;        /* Semi-bold */
+  color: #ffffff !important;          /* White color */
+  margin-bottom: 15px !important;     /* Adjust spacing */
+  letter-spacing: 2px !important;     /* Keep letter spacing for style */
+  opacity: 0.6 !important;            /* Optional: keep reduced opacity */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .presents-text {
+    font-size: 16px !important;       /* Even smaller on mobile */
+  }
+}
+
 
 
 
