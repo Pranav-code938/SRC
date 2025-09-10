@@ -1041,19 +1041,15 @@ body {
 }
 
 /* Home Section */
-.home-section {
-  justify-content: center;
-  text-align: center;
-}
 #home {
-  background-image: url('https://i.postimg.cc/PJ0Nrmmx/download-11.jpg');
+  background-image: url('https://i.postimg.cc/44cVMGfw/Whats-App-Image-2025-09-10-at-19-52-31.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* Optional: Add an overlay for text readability */
+  background-attachment: fixed; /* Optional: creates parallax effect */
   position: relative;
   z-index: 1;
-  color: white; /* or appropriate contrasting text color */
+  color: white;
 }
 
 #home::before {
@@ -1063,9 +1059,16 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 15, 28, 0.7); /* dark overlay for contrast */
+  background: rgba(10, 15, 28, 0.6); /* Dark overlay for text readability */
   z-index: -1;
+  @media (max-width: 768px) {
+  #home {
+    background-attachment: scroll; /* Better performance on mobile */
+  }
 }
+
+}
+
 
 
 .home-content {
