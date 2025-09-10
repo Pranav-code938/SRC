@@ -2089,14 +2089,14 @@ body {
 /* Alternative positioning if you want it to replace hamburger */
 .menu-stained-glass-replace {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   background-image: url('https://i.postimg.cc/nrV2KVgH/1757521919759.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
 }
