@@ -1061,6 +1061,7 @@ body {
   height: 100%;
   background: rgba(10, 15, 28, 0.3); /* Dark overlay for text readability */
   z-index: -1;
+}
   @media (max-width: 768px) {
   #home {
     background-attachment: scroll; /* Better performance on mobile */
