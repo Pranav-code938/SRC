@@ -1103,7 +1103,7 @@ body {
 }
 
 .presents-text {
-  font-size: 15px;
+  font-size: 10px;
   color: var(--text-gray);
   margin-bottom: var(--space-16);
   font-weight: 300;
