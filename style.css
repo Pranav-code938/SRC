@@ -1610,7 +1610,7 @@ body {
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  margin: 12px auto !important;
+  margin: 20px auto !important;
   width: 100% !important;
 }
 
@@ -1619,25 +1619,25 @@ body {
   flex-direction: row !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 12px !important;
+  gap: 18px !important;
   width: 95vw !important;
-  max-width: 370px !important;
+  max-width: 400px !important;
   margin: 0 auto !important;
 }
 
 .synergia-logo, .src-logo {
-  height: 38px !important;
+  height: 65px !important;        /* Much bigger - increased from 38px */
   width: auto !important;
-  max-width: 85px !important;
+  max-width: 140px !important;    /* Much bigger - increased from 85px */
   object-fit: contain !important;
   display: block !important;
 }
 
 .logo-x {
-  font-size: 45px !important;
-  font-weight: 800 !important;
+  font-size: 65px !important;     /* Bigger to match logos - increased from 45px */
+  font-weight: 400 !important;    /* Thinner X - reduced from 800 */
   color: #ffffff !important;
-  margin: 0 6px !important;
+  margin: 0 8px !important;       /* More spacing */
   line-height: 1 !important;
 }
 
@@ -1663,9 +1663,11 @@ body {
   
   .logo-x {
     font-size: 44px !important;
+    font-weight: 600 !important;  /* Slightly thicker for desktop */
     margin: 0 8px !important;
   }
 }
+
 
 
 
