@@ -13,10 +13,23 @@
 <body>
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
+        <div class="robot-loader" id="robotLoader">
+  <!-- Example robot SVG loader for demo only. Replace with your own or a Lottie player -->
+  <svg width="110" height="110" viewBox="0 0 110 110" fill="none">
+    <circle cx="55" cy="55" r="50" stroke="#00ffff" stroke-width="6" opacity="0.15"/>
+    <circle cx="55" cy="55" r="40" stroke="#00ffff" stroke-width="6" stroke-dasharray="62.83" stroke-dashoffset="0">
+      <animateTransform attributeName="transform" type="rotate" from="0 55 55" to="360 55 55" dur="1.2s" repeatCount="indefinite" />
+    </circle>
+    <rect x="45" y="30" width="20" height="20" rx="6" fill="#00ffff">
+      <animate attributeName="y" values="30;50;30" dur="1.2s" repeatCount="indefinite" />
+    </rect>
+    <rect x="55" y="60" width="18" height="8" rx="4" fill="#00ffff" opacity="0.7">
+      <animate attributeName="x" values="55;35;55" dur="1.2s" repeatCount="indefinite" />
+    </rect>
+  </svg>
+</div>
+
         <div class="loading-content">
-            <div class="glitch-logo-container">
-                <img src="https://i.postimg.cc/hGsNzX2C/SRC-logo-removebg-preview-1.png" alt="SRC Logo" class="loading-logo glitch-effect">
-            </div>
             <div class="loading-text">
                 <span class="typing-text" id="typingText"></span>
                 <span class="cursor">|</span>
@@ -293,6 +306,7 @@
 </body>
 
 </html>
+
 
 
 
