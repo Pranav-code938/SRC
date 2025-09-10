@@ -2068,9 +2068,9 @@ body {
   position: absolute;
   top: 8px;                    /* Distance from top */
   left: 60px;                  /* Distance from left (next to hamburger) */
-  width: 44px;                 /* Size of the image */
-  height: 44px;
-  background-image: url('https://i.postimg.cc/nrV2KVgH/1757521919759.png');
+  width: 50px;                 /* Size of the image */
+  height: 50px;
+  background-image: url('https://i.postimg.cc/yYvkfmph/IMG-20250910-225345.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -2081,25 +2081,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.menu-stained-glass:hover {
-  transform: scale(1.1);       /* Slight zoom on hover */
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
-}
 
-/* Alternative positioning if you want it to replace hamburger */
-.menu-stained-glass-replace {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  background-image: url('https://i.postimg.cc/nrV2KVgH/1757521919759.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
-}
 .presents-text {
   font-size: 12px !important;         /* Smaller font size */
   font-family: 'Orbitron', monospace !important;
