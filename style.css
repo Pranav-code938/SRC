@@ -2063,6 +2063,44 @@ body {
     font-size: 20px !important;
   }
 }
+/* Stained glass window image in top-left */
+.menu-stained-glass {
+  position: absolute;
+  top: 8px;                    /* Distance from top */
+  left: 60px;                  /* Distance from left (next to hamburger) */
+  width: 44px;                 /* Size of the image */
+  height: 44px;
+  background-image: url('https://i.postimg.cc/nrV2KVgH/1757521919759.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4); /* Cyan glow effect */
+  z-index: 1001;               /* Above other elements */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-stained-glass:hover {
+  transform: scale(1.1);       /* Slight zoom on hover */
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+/* Alternative positioning if you want it to replace hamburger */
+.menu-stained-glass-replace {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-image: url('https://i.postimg.cc/nrV2KVgH/1757521919759.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+}
+
 
 
 
