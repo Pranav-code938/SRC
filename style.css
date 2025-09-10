@@ -1895,6 +1895,24 @@ body {
     margin-top: 15px !important;
   }
 }
+.subtitle {
+  font-size: 28px !important;         /* Increased font size */
+  font-weight: 600 !important;        /* Semi-bold for better visibility */
+  color: var(--cyber-cyan) !important; /* Cyan color to match theme */
+  line-height: 1.2 !important;        /* Tighter line spacing */
+  white-space: nowrap !important;     /* Keep text on one line */
+  overflow: hidden !important;        /* Hide overflow if text too long */
+  text-overflow: ellipsis !important; /* Show "..." if text cuts off */
+  margin-bottom: 20px !important;     /* Add spacing below */
+}
+
+/* Mobile responsive - smaller but still bigger than original */
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 22px !important;       /* Smaller on mobile but still increased */
+  }
+}
+
 
 
 
