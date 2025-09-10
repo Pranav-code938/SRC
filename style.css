@@ -1912,6 +1912,95 @@ body {
     font-size: 22px !important;       /* Smaller on mobile but still increased */
   }
 }
+/* Mobile positioning fixes */
+#home {
+  padding-top: 100px !important;     /* More top padding for mobile */
+  min-height: 100vh !important;      /* Full screen height */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.home-content {
+  width: 90vw !important;            /* 90% of viewport width */
+  max-width: 400px !important;       /* Max width constraint */
+  margin: 0 auto !important;
+  padding: 20px !important;
+  gap: 20px !important;              /* Consistent spacing between elements */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Fix subtitle for mobile */
+.subtitle {
+  font-size: 20px !important;        /* Smaller on mobile */
+  white-space: normal !important;    /* Allow natural text wrapping */
+  margin-top: 0 !important;
+  margin-bottom: 20px !important;
+  word-break: break-word !important; /* Handle long words properly */
+  line-height: 1.3 !important;       /* Better line spacing */
+  text-align: center !important;
+}
+
+/* Mobile logo adjustments */
+.synergia-x-src {
+  gap: 12px !important;              /* Spacing between logos */
+  max-width: 320px !important;
+  margin: 0 auto !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.logo-x {
+  width: 60px !important;            /* Smaller X on mobile */
+  height: 60px !important;
+  margin: 0 6px !important;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 600px) {
+  #home {
+    padding-top: 70px !important;
+  }
+  
+  .subtitle {
+    font-size: 24px !important;      /* Larger on tablets */
+    white-space: nowrap !important;  /* Single line on larger screens */
+  }
+  
+  .synergia-x-src {
+    gap: 15px !important;
+    max-width: 380px !important;
+  }
+  
+  .logo-x {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 400px) {
+  .btn-location, 
+  .register-btn-top {
+    width: 100% !important;          /* Full width buttons on tiny screens */
+    margin: 10px 0 !important;
+  }
+  
+  .subtitle {
+    font-size: 18px !important;      /* Even smaller on very small screens */
+  }
+}
+
+/* General container fixes */
+.container {
+  max-width: 100% !important;
+  padding: 0 16px !important;
+}
 
 
 
