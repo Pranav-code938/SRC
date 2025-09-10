@@ -1619,27 +1619,39 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  width: 100vw;           /* Use full viewport width */
+  max-width: 320px;       /* Prevent overflow on very large screens */
+  margin: 0 auto;         /* Center horizontally */
 }
 
 .synergia-logo, .src-logo {
-  height: 100px;
-  max-width: 100vw;
+  height: 52px;           /* Set bigger logo height */
+  width: auto;
+  max-width: 110px;       /* Each logo max width */
   object-fit: contain;
+  display: block;
 }
 
 .logo-x {
-  font-size: 85px;
-  font-weight: 700;
+  font-size: 44px;        /* Bigger X */
+  font-weight: 800;
   color: #222;
-  margin: 0 3px;
+  margin: 0 8px;
   line-height: 1;
 }
 
 @media (max-width: 500px) {
-  .branding-bar { padding: 7px 6vw 0 0; }
-  .sahyadri-logo-topright { width: 35px; }
-  .synergia-x-src { gap: 9px; }
-  .synergia-logo, .src-logo { height: 22px; }
-  .logo-x { font-size: 18px; }
+  .synergia-x-src {
+    max-width: 93vw;
+    gap: 11px;
+  }
+  .synergia-logo, .src-logo {
+    height: 36px;
+    max-width: 80px;
+  }
+  .logo-x {
+    font-size: 32px;
+  }
 }
+
 
