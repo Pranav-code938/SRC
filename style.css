@@ -1590,68 +1590,69 @@ body {
 }
 
 .branding-bar {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 12px 18px 0 0; /* Right and top padding for spacing */
+  width: 100% !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+  padding: 12px 18px 0 0 !important;
 }
 
 .sahyadri-logo-topright {
-  width: 52px;
-  max-width: 20vw;
-  height: auto;
-  display: block;
+  width: 52px !important;
+  max-width: 20vw !important;
+  height: auto !important;
+  display: block !important;
 }
 
 .centered-logos-mobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 8px;
-  margin-bottom: 20px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  margin-top: 8px !important;
+  margin-bottom: 20px !important;
 }
 
 .synergia-x-src {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  width: 100vw;           /* Use full viewport width */
-  max-width: 320px;       /* Prevent overflow on very large screens */
-  margin: 0 auto;         /* Center horizontally */
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  width: 100vw !important;
+  max-width: 320px !important;
+  margin: 0 auto !important;
 }
 
 .synergia-logo, .src-logo {
-  height: 52px;           /* Set bigger logo height */
-  width: auto;
-  max-width: 110px;       /* Each logo max width */
-  object-fit: contain;
-  display: block;
+  height: 52px !important;
+  width: auto !important;
+  max-width: 110px !important;
+  object-fit: contain !important;
+  display: block !important;
 }
 
 .logo-x {
-  font-size: 44px;        /* Bigger X */
-  font-weight: 800;
-  color: #222;
-  margin: 0 8px;
-  line-height: 1;
+  font-size: 44px !important;
+  font-weight: 800 !important;
+  color: #222 !important;
+  margin: 0 8px !important;
+  line-height: 1 !important;
 }
 
 @media (max-width: 500px) {
   .synergia-x-src {
-    max-width: 93vw;
-    gap: 11px;
+    max-width: 93vw !important;
+    gap: 11px !important;
   }
   .synergia-logo, .src-logo {
-    height: 36px;
-    max-width: 80px;
+    height: 36px !important;
+    max-width: 80px !important;
   }
   .logo-x {
-    font-size: 32px;
+    font-size: 32px !important;
   }
 }
+
 
 
