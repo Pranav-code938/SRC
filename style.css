@@ -1103,10 +1103,10 @@ body {
 }
 
 .presents-text {
-  font-size: 18px;
+  font-size: 15px;
   color: var(--text-gray);
   margin-bottom: var(--space-16);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .main-title {
