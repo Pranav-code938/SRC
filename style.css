@@ -2001,6 +2001,29 @@ body {
   max-width: 100% !important;
   padding: 0 16px !important;
 }
+.motto {
+  text-align: center !important;        /* Center the text */
+  display: block !important;            /* Make it a block element */
+  margin: 0 auto !important;            /* Center the element itself */
+  width: fit-content !important;        /* Fit content width */
+  padding: 0 10px !important;           /* Add small padding */
+  font-family: 'Orbitron', monospace !important;
+  font-size: 12px !important;           /* Keep the reduced size */
+  color: var(--neon-pink) !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-shadow: var(--glow-pink) !important;
+  line-height: 1 !important;
+}
+
+/* Extra centering for mobile */
+@media (max-width: 768px) {
+  .motto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}
 
 
 
