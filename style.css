@@ -1633,7 +1633,7 @@ body {
   flex-direction: row !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 11px !important;
+  gap: 7px !important;
   width: 95vw !important;
   max-width: 400px !important;
   margin: 0 auto !important;
