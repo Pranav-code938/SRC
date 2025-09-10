@@ -263,6 +263,20 @@
   --color-info-rgb: var(--color-gray-300-rgb);
 }
 
+.robot-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto var(--space-24) auto;
+}
+
+.loading-screen {
+  /* Already fades out via .hidden class and transition in your code */
+}
+
+
 [data-color-scheme="light"] {
   /* RGB versions for opacity control (light mode) */
   --color-brown-600-rgb: 94, 82, 64;
