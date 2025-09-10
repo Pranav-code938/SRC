@@ -2039,7 +2039,7 @@ body {
   opacity: 1 !important;           /* Full opacity on hover */
 }
 .subtitle {
-  font-size: 32px !important;         /* Much bigger font size */
+  font-size: 38px !important;         /* Much bigger font size */
   font-weight: 900 !important;        /* Extra bold (heaviest weight) */
   color: var(--cyber-cyan) !important; /* Cyan color to match theme */
   text-shadow: 0 0 25px rgba(0, 255, 255, 0.6) !important; /* Enhanced neon glow */
