@@ -1589,17 +1589,18 @@ body {
   }
 }
 
+/* Mobile-first logo layout */
 .branding-bar {
   width: 100% !important;
   display: flex !important;
   justify-content: flex-end !important;
   align-items: flex-start !important;
-  padding: 12px 18px 0 0 !important;
+  padding: 8px 4vw 0 0 !important;
 }
 
 .sahyadri-logo-topright {
-  width: 52px !important;
-  max-width: 20vw !important;
+  width: 35px !important;
+  max-width: 15vw !important;
   height: auto !important;
   display: block !important;
 }
@@ -1608,9 +1609,9 @@ body {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  justify-content: flex-start !important;
-  margin-top: 8px !important;
-  margin-bottom: 20px !important;
+  justify-content: center !important;
+  margin: 12px auto !important;
+  width: 100% !important;
 }
 
 .synergia-x-src {
@@ -1618,41 +1619,54 @@ body {
   flex-direction: row !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 16px !important;
-  width: 100vw !important;
-  max-width: 320px !important;
+  gap: 12px !important;
+  width: 95vw !important;
+  max-width: 300px !important;
   margin: 0 auto !important;
 }
 
 .synergia-logo, .src-logo {
-  height: 52px !important;
+  height: 38px !important;
   width: auto !important;
-  max-width: 110px !important;
+  max-width: 85px !important;
   object-fit: contain !important;
   display: block !important;
 }
 
 .logo-x {
-  font-size: 44px !important;
+  font-size: 34px !important;
   font-weight: 800 !important;
-  color: #222 !important;
-  margin: 0 8px !important;
+  color: #ffffff !important;
+  margin: 0 6px !important;
   line-height: 1 !important;
 }
 
-@media (max-width: 500px) {
+/* Desktop adjustments */
+@media (min-width: 768px) {
+  .branding-bar {
+    padding: 12px 18px 0 0 !important;
+  }
+  
+  .sahyadri-logo-topright {
+    width: 52px !important;
+  }
+  
   .synergia-x-src {
-    max-width: 93vw !important;
-    gap: 11px !important;
+    gap: 16px !important;
+    max-width: 320px !important;
   }
+  
   .synergia-logo, .src-logo {
-    height: 36px !important;
-    max-width: 80px !important;
+    height: 52px !important;
+    max-width: 110px !important;
   }
+  
   .logo-x {
-    font-size: 32px !important;
+    font-size: 44px !important;
+    margin: 0 8px !important;
   }
 }
+
 
 
 
