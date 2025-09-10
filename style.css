@@ -1622,13 +1622,13 @@ body {
 }
 
 .synergia-logo, .src-logo {
-  height: 35px;
-  max-width: 33vw;
+  height: 100px;
+  max-width: 100vw;
   object-fit: contain;
 }
 
 .logo-x {
-  font-size: 30px;
+  font-size: 85px;
   font-weight: 700;
   color: #222;
   margin: 0 3px;
