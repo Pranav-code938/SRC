@@ -2257,7 +2257,7 @@ body {
 /* Move logos slightly left on mobile for perfect centering */
 @media (max-width: 768px) {
   .synergia-x-src {
-    margin-left: -4px !important;        /* Shift left by 5px */
+    margin-left: -3px !important;        /* Shift left by 5px */
     margin-right: auto !important;
     justify-content: center !important;
   }
