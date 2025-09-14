@@ -2183,6 +2183,78 @@ body {
   }
 }
 
+/* Fix logo centering and reduce spacing on mobile */
+.synergia-x-src {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;     /* Center horizontally */
+  align-items: center !important;         /* Align vertically */
+  gap: 6px !important;                   /* Reduced gap - brings logos closer */
+  max-width: 90vw !important;            /* Use more screen width */
+  margin: 0 auto !important;             /* Center the container itself */
+  padding: 0 10px !important;            /* Small padding for mobile */
+}
+
+/* Ensure logos are properly sized and aligned */
+.synergia-logo, .src-logo {
+  height: 55px !important;               /* Consistent height for alignment */
+  max-width: 120px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+/* X logo sizing to match other logos */
+.logo-x {
+  width: 55px !important;                /* Match logo height */
+  height: 55px !important;
+  margin: 0 4px !important;              /* Minimal margin */
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+/* Ensure the home content container is centered */
+.home-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;        /* Center all child elements */
+  justify-content: center !important;
+  width: 100% !important;                /* Full width */
+  padding: 0 15px !important;           /* Side padding */
+}
+
+/* Ensure the centered logos container is properly positioned */
+.centered-logos-mobile {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 15px auto !important;
+  width: 100% !important;
+  text-align: center !important;        /* Additional centering */
+}
+
+/* Desktop responsive adjustments */
+@media (min-width: 768px) {
+  .synergia-x-src {
+    gap: 12px !important;               /* More spacing on larger screens */
+    max-width: 400px !important;
+  }
+  
+  .synergia-logo, .src-logo {
+    height: 65px !important;
+    max-width: 140px !important;
+  }
+  
+  .logo-x {
+    width: 65px !important;
+    height: 65px !important;
+    margin: 0 8px !important;
+  }
+}
+
+
 
 
 
