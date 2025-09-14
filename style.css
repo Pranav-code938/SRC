@@ -2352,6 +2352,57 @@ body {
   }
 }
 
+/* Fix Sahyadri logo - move to actual top-right corner */
+.branding-bar {
+  position: fixed !important;           /* Fixed positioning relative to viewport */
+  top: 70px !important;                 /* Below the navigation bar */
+  right: 20px !important;               /* From right edge of screen */
+  width: auto !important;
+  height: auto !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+  padding: 0 !important;
+  z-index: 999 !important;              /* Below navigation but above content */
+  margin: 0 !important;
+}
+
+.sahyadri-logo-topright {
+  width: 50px !important;
+  height: auto !important;
+  max-width: 50px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 !important;
+  position: static !important;          /* Reset any positioning */
+}
+
+/* Remove the overlapping issue - keep main logos clean */
+.synergia-x-src {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  max-width: 380px !important;
+  margin: 0 auto !important;
+  position: relative !important;        /* Ensure it's not affected by absolute positioning */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .branding-bar {
+    top: 65px !important;               /* Adjust for mobile nav height */
+    right: 15px !important;
+  }
+  
+  .sahyadri-logo-topright {
+    width: 40px !important;
+    max-width: 40px !important;
+  }
+}
+
+
 
 
 
