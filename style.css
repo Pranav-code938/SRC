@@ -2401,6 +2401,69 @@ body {
     max-width: 40px !important;
   }
 }
+/* 1. Increase Sahyadri logo size */
+.branding-bar {
+  position: fixed !important;
+  top: 70px !important;
+  right: 15px !important;
+  z-index: 1000 !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+  padding: 0 !important;
+}
+
+.sahyadri-logo-topright {
+  width: 70px !important;              /* Increased from 50px to 70px */
+  height: auto !important;
+  max-width: 70px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* 2. Move Synergia X SRC slightly left to align above SE in PRESENTS */
+.synergia-x-src {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 5px !important;
+  max-width: 380px !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  left: -3px !important;              /* Shift left to align above SE */
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .branding-bar {
+    top: 65px !important;
+    right: 12px !important;
+  }
+
+  .sahyadri-logo-topright {
+    width: 70px !important;            /* Bigger on mobile too */
+    max-width: 70px !important;
+  }
+
+  .synergia-x-src {
+    gap: 6px !important;
+    max-width: 95vw !important;
+    left: -3px !important;            /* Adjusted left shift for mobile */
+  }
+
+  .synergia-logo, .src-logo {
+    height: 55px !important;
+    max-width: 120px !important;
+  }
+  
+  .logo-x {
+    width: 55px !important;
+    height: 55px !important;
+    margin: 0 6px !important;
+  }
+}
 
 
 
