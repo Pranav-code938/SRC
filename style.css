@@ -2493,7 +2493,7 @@ body {
 /* Mobile responsive adjustment */
 @media (max-width: 768px) {
   .branding-bar {
-    top: 40px !important;              /* Raised higher on mobile (was 65px) */
+    top: 20px !important;              /* Raised higher on mobile (was 65px) */
     right: 12px !important;
   }
 
