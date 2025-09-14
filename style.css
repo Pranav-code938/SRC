@@ -2269,6 +2269,88 @@ body {
     margin-left: -10px !important;       /* Shift left by 10px on tiny screens */
   }
 }
+/* 1. Make the X white */
+.logo-x {
+  filter: brightness(0) invert(1) !important;  /* Convert to white */
+  width: 60px !important;
+  height: 60px !important;
+  margin: 0 8px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+/* 2. Move Sahyadri logo to proper top-right position and make bigger */
+.branding-bar {
+  position: absolute !important;
+  top: 12px !important;
+  right: 20px !important;
+  width: auto !important;
+  height: auto !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+  padding: 0 !important;
+  z-index: 1000 !important;
+}
+
+.sahyadri-logo-topright {
+  width: 60px !important;          /* Made bigger */
+  height: auto !important;
+  max-width: 60px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* 3. Fix Synergia and SRC logo alignment */
+.synergia-x-src {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: center !important;     /* Perfect vertical alignment */
+  gap: 10px !important;
+  max-width: 380px !important;
+  margin: 0 auto !important;
+}
+
+/* Ensure both logos have same height for perfect alignment */
+.synergia-logo, .src-logo {
+  height: 65px !important;           /* Same height for both */
+  width: auto !important;
+  max-width: 140px !important;
+  object-fit: contain !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .branding-bar {
+    top: 8px !important;
+    right: 15px !important;
+  }
+  
+  .sahyadri-logo-topright {
+    width: 50px !important;
+    max-width: 50px !important;
+  }
+  
+  .synergia-logo, .src-logo {
+    height: 55px !important;
+    max-width: 120px !important;
+  }
+  
+  .logo-x {
+    width: 55px !important;
+    height: 55px !important;
+    margin: 0 6px !important;
+  }
+  
+  .synergia-x-src {
+    gap: 8px !important;
+    max-width: 95vw !important;
+  }
+}
 
 
 
