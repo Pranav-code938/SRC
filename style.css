@@ -2432,7 +2432,7 @@ body {
   max-width: 380px !important;
   margin: 0 auto !important;
   position: relative !important;
-  left: -3px !important;              /* Shift left to align above SE */
+  left: -4px !important;              /* Shift left to align above SE */
 }
 
 /* Mobile responsive adjustments */
@@ -2450,7 +2450,7 @@ body {
   .synergia-x-src {
     gap: 6px !important;
     max-width: 95vw !important;
-    left: -3px !important;            /* Adjusted left shift for mobile */
+    left: -4px !important;            /* Adjusted left shift for mobile */
   }
 
   .synergia-logo, .src-logo {
@@ -2464,6 +2464,45 @@ body {
     margin: 0 6px !important;
   }
 }
+/* Raise Synergia logo 1px above SRC logo */
+.synergia-logo {
+  position: relative !important;
+  top: -1px !important;              /* Move 1px up */
+}
+/* Raise Sahyadri logo higher up */
+.branding-bar {
+  position: fixed !important;
+  top: 45px !important;                /* Raised higher (was 70px) */
+  right: 15px !important;
+  z-index: 1000 !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+  padding: 0 !important;
+}
+
+.sahyadri-logo-topright {
+  width: 70px !important;
+  height: auto !important;
+  max-width: 70px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* Mobile responsive adjustment */
+@media (max-width: 768px) {
+  .branding-bar {
+    top: 40px !important;              /* Raised higher on mobile (was 65px) */
+    right: 12px !important;
+  }
+
+  .sahyadri-logo-topright {
+    width: 60px !important;
+    max-width: 60px !important;
+  }
+}
+
 
 
 
