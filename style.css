@@ -2099,6 +2099,90 @@ body {
   }
 }
 
+/* Fix Synergia and SRC logo alignment */
+.synergia-x-src {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;        /* Vertically center all elements */
+  justify-content: center !important;
+  gap: 12px !important;
+  width: 95vw !important;
+  max-width: 380px !important;
+  margin: 0 auto !important;
+}
+
+/* Ensure consistent logo heights for proper alignment */
+.synergia-logo, .src-logo {
+  height: 60px !important;              /* Set same height for both logos */
+  width: auto !important;
+  max-width: 130px !important;
+  object-fit: contain !important;
+  display: block !important;
+  vertical-align: middle !important;    /* Additional alignment help */
+}
+
+/* Adjust X size to match logo heights */
+.logo-x {
+  width: 60px !important;
+  height: 60px !important;
+  margin: 0 8px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .synergia-logo, .src-logo {
+    height: 50px !important;
+    max-width: 110px !important;
+  }
+  
+  .logo-x {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .synergia-x-src {
+    gap: 10px !important;
+  }
+}
+
+/* Location button for multi-line text */
+.btn-location {
+  white-space: normal !important;           /* Allow text wrapping */
+  padding: 15px 25px !important;           /* More padding for multi-line */
+  font-size: 14px !important;
+  letter-spacing: 0.5px !important;        /* Reduce letter spacing for longer text */
+  line-height: 1.4 !important;             /* Better line spacing */
+  border-radius: 8px !important;
+  max-width: 90vw !important;
+  width: auto !important;
+  min-height: auto !important;
+  text-align: center !important;
+  word-break: break-word !important;       /* Break long words if needed */
+  
+  /* Style properties */
+  border: 2px solid #00ffff !important;
+  background: linear-gradient(45deg, rgba(0, 255, 255, 0.1), rgba(0, 212, 255, 0.1)) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4) !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  transition: all 0.3s ease !important;
+  font-family: 'Orbitron', monospace !important;
+  font-weight: 600 !important;
+}
+
+/* Mobile responsive for location */
+@media (max-width: 400px) {
+  .btn-location {
+    font-size: 12px !important;
+    padding: 12px 20px !important;
+    width: 95% !important;
+    letter-spacing: 0.3px !important;
+  }
+}
+
 
 
 
