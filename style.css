@@ -2308,7 +2308,7 @@ body {
   flex-wrap: nowrap !important;
   justify-content: center !important;
   align-items: center !important;     /* Perfect vertical alignment */
-  gap: 10px !important;
+  gap: -3px !important;
   max-width: 380px !important;
   margin: 0 auto !important;
 }
@@ -2368,9 +2368,9 @@ body {
 }
 
 .sahyadri-logo-topright {
-  width: 50px !important;
+  width: 70px !important;
   height: auto !important;
-  max-width: 50px !important;
+  max-width: 70px !important;
   object-fit: contain !important;
   display: block !important;
   margin: 0 !important;
